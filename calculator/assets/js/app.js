@@ -22,9 +22,43 @@ buttons.forEach(button => {
             equalOperation(storageInput.value.slice(0, -1), currentInput.value, storageInput.value.slice(-1))
             currentInput.value = ""
             storageInput.value = storageInput.value.slice(0, -1)
-            
         }
+
+
+        if (buttonType === "clean") {
+            currentInput.value = "0"
+        }
+
+
+        if (buttonType === "clean-all") {
+            currentInput.value = "0"
+            storageInput.value = ""
+        }
+
+        if (buttonType === "ON") {
+            if (!currentInput.value.length) {
+                currentInput.value = "0"
+            }
+            else{
+                currentInput.value = ""
+            }
+        }
+
+        if (buttonType === "delete") {
+            
+            if (currentInput.value.length) {
+              currentInput.value =  currentInput.value.slice(0, -1)
+            }
+
+           
+
+
+        }
+
+
     })
+
+
 });
 
 const equalOperation = function (storageNumber, currentNumber, operation) {
