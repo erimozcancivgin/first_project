@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display-wrapper">
+            <div class="display">
+                <input disabled title="asd" type="text" class="storaged-number">
+                <input disabled title="dsa" type="text" class="current-number">
+            </div>
+
+        </div>
+        <div class="body-wrapper">
+            <div class="number-buttons">
+                <button type="button" data-type="clean-all">CA</button>
+                <button type="button" data-type="ON">ON</button>
+                <button type="button" data-type="clean">C</button>
+                <button type="button" data-type="number" value="7">7</button>
+                <button type="button" data-type="number" value="8">8</button>
+                <button type="button" data-type="number" value="9">9</button>
+                <button type="button" data-type="number" value="4">4</button>
+                <button type="button" data-type="number" value="5">5</button>
+                <button type="button" data-type="number" value="6">6</button>
+                <button type="button" data-type="number" value="1">1</button>
+                <button type="button" data-type="number" value="2">2</button>
+                <button type="button" data-type="number" value="3">3</button>
+                <button type="button" data-type="number" value=".">.</button>
+                <button type="button" data-type="number" value="0">0</button>
+                <button type="button" data-type="equal" value="=">=</button>
+            </div>
+            <div class="operation-buttons">
+                <button type="button" data-type="delete"> &#8592</button>
+                <button type="button" data-type="operation" value="+">&#xFF0B</button>
+                <button type="button" data-type="operation" value="-">&#x2212;</button>
+                <button type="button" data-type="operation" value="*">x</button>
+                <button type="button" data-type="operation" value="/">/</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
