@@ -1,4 +1,3 @@
-
 body {
     display: flex;
     justify-content: center;
@@ -11,7 +10,7 @@ body {
         flex-direction: column;
         width: 300px;
         height: 400px;
-        background-color: lightgray;
+        background-color: rgb(185, 185, 185);
 
         .display-wrapper {
             width: 100½;
@@ -29,8 +28,9 @@ body {
                     background-color: #637461;
                     color: black;
                     text-align: end;
-                    min-width:0;
+                    min-width: 0;
                     padding: 0px 5px;
+
                     &:first-child {
                         border-bottom: 0;
                     }
@@ -51,8 +51,16 @@ body {
             .number-buttons {
                 flex: 3 1;
                 display: grid;
+                font-size: medium;
                 grid-template-columns: repeat(3, 1fr)
             }
+
+            .ON {
+                background-color: rgb(206, 124, 104);
+                border: rgb(185, 185, 185);
+
+            }
+
 
             .operation-buttons {
                 flex: 1 1;
@@ -61,9 +69,10 @@ body {
 
                 button {
                     flex: 1 1;
-
+                    font-size: 20px;
                 }
             }
+
         }
     }
 }

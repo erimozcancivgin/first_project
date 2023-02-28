@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     width: 300px;
     height: 400px;
-    background-color: lightgray; }
+    background-color: #b9b9b9; }
     body .calculator .display-wrapper {
       width: 100½;
       display: flex;
@@ -39,12 +39,17 @@ body {
       body .calculator .body-wrapper .number-buttons {
         flex: 3 1;
         display: grid;
+        font-size: medium;
         grid-template-columns: repeat(3, 1fr); }
+      body .calculator .body-wrapper .ON {
+        background-color: #ce7c68;
+        border: #b9b9b9; }
       body .calculator .body-wrapper .operation-buttons {
         flex: 1 1;
         display: flex;
         flex-direction: column; }
         body .calculator .body-wrapper .operation-buttons button {
-          flex: 1 1; }
+          flex: 1 1;
+          font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
