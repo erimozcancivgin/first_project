@@ -39,22 +39,22 @@ buttons.forEach(button => {
             if (!currentInput.value.length) {
                 currentInput.value = "0"
             }
-            else{
+            else {
                 currentInput.value = ""
             }
         }
 
         if (buttonType === "delete") {
-            
+
             if (currentInput.value.length) {
-              currentInput.value =  currentInput.value.slice(0, -1)
+                currentInput.value = currentInput.value.slice(0, -1)
             }
-
-           
-
 
         }
 
+        if (currentInput.value.charAt(0) === "0") {
+            currentInput.value = currentInput.value.slice(-1)
+        }
 
     })
 
